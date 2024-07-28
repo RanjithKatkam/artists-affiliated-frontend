@@ -5,6 +5,7 @@ import Navbar from "../Navbar";
 class Transactions extends Component {
     state = {
         transactions: [],
+        balance: 0,
     };
 
     componentDidMount() {
@@ -12,6 +13,7 @@ class Transactions extends Component {
             const response = await fetch("https://artists-affiliated.onrender.com/transactions");
             const responseData = await response.json();
             this.setState({ transactions: responseData.reverse() });
+            this.setState({ balance: responseData[0].running_balance });
         };
 
         getData();

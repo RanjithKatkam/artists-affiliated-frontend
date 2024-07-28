@@ -1,0 +1,87 @@
+.add-transaction-container {
+    height: 80%;
+    width: 50%;
+    background-color: #10101095;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #3f3e3e;
+    color: whitesmoke;
+}
+
+.add-transaction-container h1 {
+    font-family: "Merriweather";
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    margin-top: 7%;
+    flex-direction: column;
+}
+
+.form label {
+    font-family: "Poppins";
+    font-size: 18px;
+}
+
+#select {
+    height: 9%;
+    border-radius: 7px;
+    outline: none;
+    padding: 0px 20px;
+    margin-bottom: 3%;
+}
+
+#desc {
+    height: 15%;
+    resize: none;
+    border-radius: 7px;
+    margin-bottom: 3%;
+    padding: 10px;
+    outline: none;
+}
+
+.form input {
+    height: 8%;
+    padding: 0px 20px;
+    border-radius: 7px;
+    outline: none;
+    margin-bottom: 3%;
+}
+
+.form div {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin-top: auto;
+    height: 8%;
+    margin-left: auto;
+}
+
+.save {
+    width: 50%;
+    border-radius: 8px;
+    font-family: "Poppins";
+    border: none;
+    background: linear-gradient(140deg, #394999, #5f75e6);
+    color: azure;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form p {
+    color: white;
+    font-family: "Poppins";
+    text-align: center;
+}
+
+.cancel {
+    width: 40%;
+    border-radius: 8px;
+    font-family: "Poppins";
+    cursor: pointer;
+    font-size: 15px;
+}
