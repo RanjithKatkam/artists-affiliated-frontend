@@ -1,0 +1,116 @@
+.transactions-main-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(115deg, #222222, #000000);
+}
+
+.navbar {
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #333232;
+}
+
+.navbar img {
+    height: 65%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.link {
+    margin-right: 10%;
+    height: 32%;
+    text-decoration: none;
+    width: 140px;
+}
+
+.navbar button {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    font-family: "Poppins";
+    border: none;
+    background: linear-gradient(140deg, #394999, #5f75e6);
+    color: azure;
+    cursor: pointer;
+}
+
+.heading {
+    font-family: "Poppins";
+    color: whitesmoke;
+    text-align: center;
+}
+
+.transactions {
+    height: auto;
+    width: 60%;
+    background-color: #10101095;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid #3f3e3e;
+}
+
+.list {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Barlow";
+    color: whitesmoke;
+}
+
+.list-headers {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3f3e3e;
+    font-size: 15px;
+}
+
+h3 {
+    border-right: 1px solid #fff;
+    margin-left: 15px;
+}
+
+.list-headers :nth-child(1) {
+    width: 11%;
+}
+.list-headers :nth-child(2) {
+    width: 45%;
+}
+.list-headers :nth-child(3) {
+    width: 10%;
+}
+.list-headers :nth-child(4) {
+    width: 13%;
+}
+.list-headers :nth-child(5) {
+    border-right: none;
+}
+
+.light {
+    color: rgb(184, 180, 180);
+}
+
+.italic {
+    font-style: italic;
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.trans-item {
+    font-size: 14px;
+    font-family: "Poppins";
+    font-weight: 300;
+}
+
+.item {
+    margin: 10px 0px;
+}
