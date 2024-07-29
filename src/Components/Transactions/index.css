@@ -14,10 +14,14 @@
     border-bottom: 1px solid #333232;
 }
 
-.navbar img {
+.logo {
     height: 65%;
     margin-left: 10%;
     cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
 }
 
 .link {
@@ -45,7 +49,8 @@
 }
 
 .transactions {
-    height: auto;
+    height: 70%;
+    overflow: scroll;
     width: 60%;
     background-color: #10101095;
     margin: auto;
