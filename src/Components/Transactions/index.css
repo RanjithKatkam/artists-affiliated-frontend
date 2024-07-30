@@ -119,3 +119,47 @@ h3 {
 .item {
     margin: 10px 0px;
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        height: 9%;
+    }
+
+    .logo {
+        height: 50%;
+    }
+
+    .link {
+        width: 25%;
+    }
+
+    .navbar button {
+        font-size: 11px;
+    }
+
+    .transactions {
+        width: 90%;
+        margin-top: 2%;
+    }
+
+    .list-headers {
+        font-size: 10px;
+    }
+
+    .list-headers :nth-child(1) {
+        width: 13%;
+    }
+    .list-headers :nth-child(2) {
+        width: 35%;
+    }
+    .list-headers :nth-child(3) {
+        width: 12%;
+    }
+    .list-headers :nth-child(4) {
+        width: 13%;
+    }
+
+    h3 {
+        margin-left: 10px;
+    }
+}

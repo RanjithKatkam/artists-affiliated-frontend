@@ -1,5 +1,6 @@
 import { Component } from "react";
 import Navbar from "../Navbar";
+import withNavigate from "../withNavigate";
 import "./index.css";
 
 class AddTransaction extends Component {
@@ -75,13 +76,20 @@ class AddTransaction extends Component {
                     date: "",
                     balance: runningAmount,
                 });
+                setTimeout(() => {
+                    this.props.navigate("/");
+                }, 1500);
             } else {
                 this.setState({ transactionStatus: "Error Adding Transaction", type: "credit", amount: "", description: "", date: "" });
             }
         } catch (error) {
-            console.error("Error Adding Transaction: ", error.message);
+            console.error("Error Adding Transaction ", error.message);
             this.setState({ transactionStatus: error.message });
         }
+    };
+
+    onClickCancel = () => {
+        this.props.navigate("/");
     };
 
     render() {
@@ -107,7 +115,9 @@ class AddTransaction extends Component {
                             <button type="submit" className="save">
                                 Save
                             </button>
-                            <button className="cancel">Cancel</button>
+                            <button onClick={this.onClickCancel} className="cancel">
+                                Cancel
+                            </button>
                         </div>
                     </form>
                 </div>
@@ -116,4 +126,4 @@ class AddTransaction extends Component {
     }
 }
 
-export default AddTransaction;
+export default withNavigate(AddTransaction);
